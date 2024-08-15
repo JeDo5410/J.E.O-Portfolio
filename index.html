@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav id="desktop-nav">
         <div class="logo"> JEOblepias</div>
         <div class="nav-right">
@@ -23,6 +25,8 @@
             </button>
         </div>
     </nav>
+
+    <!-- Navigation Bar for Mobile devices -->
     <nav id="hamburger-nav">
         <div class="logo"> JEOblepias</div>
         <div class="hamburger-menu">
@@ -40,6 +44,8 @@
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
     </nav>
+
+    <!-- Hero Section -->
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profile-pic.png" alt="John Doe Profile Picture">
@@ -62,33 +68,57 @@
             </div>
         </div>
     </section>
+
+    <!-- About Me Section -->
+    <div class="darker-gray-bg">
     <section id="about">
         <h1 class="title">About Me</h1>
-        <p class="section__text__p1">Get To Know More</p>
+        <p class="section__text__p1">Personal Details & Contact Information</p>
         <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="profile picture" class="about-pic"/>
-            </div>
-            <div class="about-details-container">
+            <div class="left-column">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>2+ years <br />Full Stack Development</p>
+                        <h3>Mission</h3>
+                        <p>Lorem Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, consequatur incidunt nesciunt dicta laboriosam, inventore minima distinctio veritatis iste dolor magni esse,</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="education icon" class="icon">
-                        <h3>Education</h3>
-                        <p>B.S. Bachelros Degree <br />Master Degree</p>
+                        <h3>Vision</h3>
+                        <p>Lorem Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, consequatur incidunt nesciunt dicta laboriosam, inventore minima distinctio veritatis iste dolor magni esse,</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="about-info-container">
+                    <p class="section__text__p2">Full Stack Developer</p>
+                    <div class=personal-info>
+                        <div class="about-info-item">
+                            <img src="./assets/arrow-right-orange.png" alt="Orange right arrow" class="about-right-arrow"> <span>Name: </span><p>John Edward Oplepias</p>
+                        </div>
+                        <div class="about-info-item">
+                            <img src="./assets/arrow-right-orange.png" alt="Orange right arrow" class="about-right-arrow"> <span>Birthday: </span> <p>May 11, 2005</p>
+                        </div>
+                        <div class="about-info-item">
+                            <img src="./assets/arrow-right-orange.png" alt="Orange right arrow" class="about-right-arrow"> <span>Address: </span><p>Cabuyao City, Phhilippines</p>
+                        </div>
+                        <div class="about-info-item">
+                            <img src="./assets/arrow-right-orange.png" alt="Orange right arrow" class="about-right-arrow"> <span>Language: </span><p>Filipino & English</p>
+                        </div>
+                        <div class="about-info-item">
+                            <img src="./assets/arrow-right-orange.png" alt="Orange right arrow" class="about-right-arrow"> <span>Phone: </span><p>+63949-835-3196</p>
+                        </div>
+                        <div class="about-info-item">
+                            <img src="./assets/arrow-right-orange.png" alt="Orange right arrow" class="about-right-arrow"> <span>Email: </span><p>johnedwardoblepias11@gmail.com</p>
+                        </div>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, consequatur incidunt nesciunt dicta laboriosam, inventore minima distinctio veritatis iste dolor magni esse, id voluptatem expedita aperiam libero doloremque! Ab et nulla quisquam sint cumque, laborum quas perspiciatis rem consectetur incidunt iusto, culpa placeat cupiditate facilis assumenda? Nemo distinctio dolore ducimus!</p>
+                    <p>While my primary focus is software engineering, I'm passionate about continuous learning across various fields. My curiosity extends to scientific discoveries and advancements, which often inspire my approach to problem-solving in coding. This interdisciplinary interest helps me bring unique perspectives to my development work, especially when tackling complex, data-driven projects.</p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#education'">
     </section>
+    </div>
     <section id="education">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
