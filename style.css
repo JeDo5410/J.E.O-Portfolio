@@ -294,7 +294,8 @@ section {
     margin-bottom: 1rem ;
     flex-direction: column;
     align-items: center;
-    width: 20rem;
+    width: 100%;
+    max-width: 20rem;    
 }
 
 .details-container h3 {
