@@ -11,6 +11,7 @@ body {
     font-family: "Poppins", "sans-serif";
     background-color: #151515;
     color: #ffffff;
+    
 }
 
 html {
@@ -149,7 +150,6 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -206,7 +206,7 @@ section {
 
 .video-intro .btn {
     display: flex;
-    width: 12rem;
+    width: 14rem;
     align-items: center;
     justify-content: space-around;
 }
@@ -269,41 +269,32 @@ section {
 }
 
 /* About Section */
-#about {
+.darker-gray-bg {
     background-color: #0a0a0a;
-    color: #ffffff;
-    padding: 2rem;
-    font-family: Arial, sans-serif;
+    height: auto;
+    min-height: 100px;
 }
 
-.title {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
+#about {
+    position: relative;
+    padding-bottom: 3rem;
 }
 
-.subtitle {
-    font-size: 1rem;
-    text-align: center;
-    color: #888;
+#about .section__text__p1 {
     margin-bottom: 2rem;
 }
 
-.section-container {
+#about .details-container {
     display: flex;
-    gap: 2rem;
-}
-
-.left-column, .right-column {
-    flex: 1;
-}
-
-.details-container {
-    background-color: #252525;
-    border: 1px solid #f36100;
-    border-radius: 1rem;
+    background: #252525;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: #f36100 0.1rem solid;
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem ;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
 }
 
 .details-container h3 {
@@ -311,38 +302,67 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.about-info-container {
-    margin-bottom: 1rem;
+.details-container p {
+    text-align: justify;
+    margin: 0 20px 0px;
+    font-size: small;
 }
 
-.role {
+.about-info-container {
+    margin-bottom: 3rem;
+}
+
+#about .section__text__p2 {
     color: #f36100;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.personal-info {
-    display: grid;
+.personal-info .row{
+    margin-bottom: 1.5rem;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem; */
 }
 
-.info-item {
+.about-info-item {
     display: flex;
     align-items: center;
 }
 
-.info-label {
-    color: #f36100;
+.about-info-item span {
     margin-right: 0.5rem;
+    color: white;
 }
 
-.info-value {
-    color: #fff;
+.about-info-item p {
+    margin-bottom: 0px;
+    font-size: small;
 }
 
-.bio {
+.text-container {
     line-height: 1.6;
+}
+
+.about-right-arrow {
+    height: 1rem;
+    margin-right: 10px;
+}
+
+#about .arrow {
+    position: absolute;
+    right: 1rem;
+    bottom: 2.5rem;
+}
+
+.section-container {
+    display: flex;
+    gap: 4rem;
+}
+
+.col-4 .left-column {
+    margin: auto;
+
 }
 
 /* Education */
