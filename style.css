@@ -360,14 +360,38 @@ section {
     gap: 2rem;
 }
 
+.bottom-column {
+    display: none;
+}
+
 @media (max-width: 991px) {
+
     .section-container {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "info"
+            "about"
+            "text";
     }
 
-    #about .details-container {
-        max-width: 100%;
+    .hidden-responsive {
+        display: none;
     }
+
+    .bottom-column {
+        display: grid;
+        order: 3;
+    }
+
+    .left-column {
+        order: 2;
+    }
+
+    .right-column {
+        order: 1;
+    }
+
 }
 
 @media (max-width: 575px) {
