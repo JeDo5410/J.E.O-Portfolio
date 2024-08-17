@@ -294,8 +294,7 @@ section {
     margin-bottom: 1rem ;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 20rem;    
+
 }
 
 .details-container h3 {
@@ -321,11 +320,8 @@ section {
 
 .personal-info .row{
     margin-bottom: 1.5rem;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem; */
 }
-
+    
 .about-info-item {
     display: flex;
     align-items: center;
@@ -361,9 +357,40 @@ section {
     gap: 4rem;
 }
 
-.col-4 .left-column {
-    margin: auto;
+@media (max-width: 991px) {
+    .section-container {
+        flex-direction: column;
+    }
 
+    #about .details-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .details-container {
+    }
+
+    .about-info-item span {
+        width: 100%;
+    }
+
+    .about-info-item p {
+        width: 100%;
+    }
+
+    .personal-info .row {
+        margin-bottom: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-info-item {
+        display: flex;
+        flex-direction: row;
+    }
+    
 }
 
 /* Education */
