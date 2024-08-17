@@ -286,14 +286,13 @@ section {
 
 #about .details-container {
     display: flex;
-    background: #252525;
+    background: #151515;
     padding: 1.5rem;
     border-radius: 2rem;
     border: #f36100 0.1rem solid;
     margin-bottom: 1rem;
     flex-direction: column;
     align-items: center;
-
 }
 
 .details-container h3 {
@@ -346,7 +345,6 @@ section {
 .about-right-arrow {
     height: 1rem;
     margin-right: 10px;
-
 }
 
 #about .arrow {
@@ -386,9 +384,6 @@ section {
 }
 
 @media (max-width: 575px) {
-    .details-container {
-    }
-
     .about-info-item span {
         width: 100%;
     }
@@ -409,6 +404,95 @@ section {
         flex-direction: row;
     }
     
+}
+
+/* Skills  */
+
+#skills {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.skills-section-container {
+    gap: 0.1rem;
+    margin: auto;   
+    justify-content: space-around;
+}
+
+.technical-skills-container {
+    background: #252525;
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: #f36100 0.1rem solid;
+    flex-direction: column;
+    align-items: center;
+    width: 33rem;
+    align-items: center;
+}
+
+.technical-skills-container .row-cols-2{
+    padding-top: 35px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skills-container img {
+    margin-right: 10px;
+}
+
+.skills-container span {
+    flex: 1;
+}
+
+.skills-container p {
+    width: 100%;
+    margin-top: 5px; 
+    margin-left: calc(20px + 10px); 
+}
+
+.technical-skills-container .row-cols-2 > .col:last-child {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkmark-orange {
+    height: 1.3rem;
+    margin-right: 10px;
+}
+
+.orange-bullet {
+    height: 0.8rem;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 991px) {
+    .skills-section-container {
+        display: grid;
+    }
+}
+    
+@media (max-width: 575px) {
+    .technical-skills-container {
+        width: 100%;
+    }
+
+    .skills-container {
+        padding-left: 20px;
+    }
+    
+}
+
+@media (min-width: 575px) {
+    .skills-container {
+        padding-left: 50px;
+    }
 }
 
 /* Education */
