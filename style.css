@@ -433,13 +433,17 @@ section {
 }
 
 .technical-skills-container .row-cols-2{
+    display: flex;
+    align-items: flex-start;
     padding-top: 35px;
+
 }
 
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .skills-container img {
@@ -461,6 +465,23 @@ section {
     margin-right: auto;
 }
 
+.specified-skill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.specified-skill p {
+    margin-left: 0px;
+    margin-bottom:  0px;
+}
+
+.skills-specified-list .specified-skill:last-child  {
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+                         
 .checkmark-orange {
     height: 1.3rem;
     margin-right: 10px;
@@ -493,6 +514,16 @@ section {
     .skills-container {
         padding-left: 50px;
     }
+}
+
+@media (max-width: 400px) {
+    .frontend-technologies .skills-container {
+        padding-left: 0px;
+    } 
+    
+    .technical-skills-container-technologies h3 {
+        font-size: larger;
+    } 
 }
 
 /* Education */
