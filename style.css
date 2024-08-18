@@ -432,6 +432,11 @@ section {
     align-items: center;
 }
 
+.technical-skills-container h3{
+    color: #f36100;
+    font-weight: 600;
+}
+
 .technical-skills-container .row-cols-2{
     display: flex;
     align-items: flex-start;
@@ -492,6 +497,11 @@ section {
     margin-right: 10px;
 }
 
+#skills .arrow {
+    position: absolute;
+    right: 1rem;
+    bottom: 2.5rem;
+}
 
 @media (max-width: 991px) {
     .skills-section-container {
@@ -524,6 +534,14 @@ section {
     .technical-skills-container-technologies h3 {
         font-size: larger;
     } 
+
+    .database-tools span{
+        font-size: small;
+    }
+
+    .power-automate {
+        font-size: small;
+    }
 }
 
 /* Education */
