@@ -658,6 +658,21 @@ section {
     }
 } 
 
+@media (max-width: 575px) {
+    .education-container1 {
+        width: auto;
+    }
+
+    .education-header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .school-year {
+        justify-content: left;
+    }
+}
+
 /* Projects */
 
 #projects {
