@@ -502,12 +502,7 @@ section {
     bottom: 2.5rem;
 }
 
-@media (max-width: 991px) {
-    .skills-section-container {
-        display: grid;
-    }
-}
-    
+
 @media (max-width: 575px) {
     .technical-skills-container {
         width: 100%;
@@ -663,7 +658,9 @@ section {
         order: 3;
     }
 
-    .lpu {}
+    .lpu {
+        order: 4;
+    }
 
     .education-section-container .education-container:nth-last-child(2) {
         padding-bottom: 20px;
@@ -692,27 +689,127 @@ section {
     position: relative;
 }
 
-.color-container {
-    border-color: #f36100;
-    background: #252525;
+.project-container {
+    background-color: rgb(37, 37, 37);
+    width: 22.5rem;
 }
 
-.project-img {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+.projects-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
 }
 
-.project-title {
-    margin: 1rem;
+.card-header1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title {
     color: #ffffff;
 }
 
-.project-btn {
-    color: #ffffff;
-    border-color: #f36100;
+.card-text {
+    padding: 0 0 10px 0;
 }
 
+.project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-links .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 2.5rem;
+}
+
+.project-github-icon {
+    width: 17px;
+}
+
+.project-view-live-icon {
+    width: 15px;
+}
+
+#projects .arrow {
+    position: absolute;
+    right: 1rem;
+    bottom: 2.5rem;
+}
+
+/* Popover */
+.popover-container {
+    position: relative;
+}
+.popover-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popover-button img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.popover-button:hover img {
+    transform: scale(1.1);
+}
+.popover-content {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    width: 250px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% + 10px);
+    animation: fadeInUp 0.3s ease-out;
+}
+.popover-content::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    background-color: white;
+}
+.popover-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+.popover-content p {
+    margin: 0;
+    color: #4b5563;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 10px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
 /* Contact */
 
 #contact {
