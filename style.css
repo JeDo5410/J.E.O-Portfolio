@@ -550,38 +550,113 @@ section {
     position: relative;
 }
 
-.experience-sub-title {
-    color: #f36100;
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
+.education-section-container .education-container:nth-last-child(-n+2) {
+    padding-bottom: 0px;
+    margin-bottom: 20px;
 }
 
-.experience-details-container {
+.education-container {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #f36100;
+    position: relative;
+}
+
+.education-container1 {
+    flex: 1;
+    background: #151515;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: gray 0.1rem solid;
+    width: 30rem;
+    height: 100%;
 }
 
-.article-container {
+.education-header {
     display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-article {
+.education-header .school{
+    font-size: 1.2rem  ;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.school-year {
     display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
+    color: #f36100;
+    width: 9rem;
+    justify-content: right;
 }
 
-article .icon {
-    cursor: default;
+.course {
+    font-size: medium;
+    color: #c4c4c4;
+    margin-bottom: 25px;
 }
+
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.student-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.education-info-container p { 
+    margin-bottom: 0px;
+}
+
+.currently-attending p{
+    color: #f36100;
+}
+
+.education-container::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #f36100;
+    border: 2px solid #f36100;
+  }
+
+.location-icon {
+    width: 13px;
+    height: 19px;
+    margin-right: 10px;
+}
+
+#education .arrow {
+    position: absolute;
+    right: 1rem;
+    bottom: 2.5rem;
+}
+
+@media (max-width: 1200px) {
+    .education-section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-section-container .education-container:nth-last-child(2) {
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+    }
+} 
 
 /* Projects */
 
