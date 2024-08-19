@@ -461,7 +461,7 @@ section {
 
 .skills-container p {
     width: 100%;
-    margin-top: 5px; 
+    margin-top: 0px; 
     margin-left: calc(20px + 10px); 
 }
 
