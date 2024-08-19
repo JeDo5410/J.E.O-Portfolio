@@ -651,6 +651,22 @@ section {
         align-items: center;
     }
 
+    .lithan {
+        order: 1;
+    }
+
+    .sti {
+        order: 2;
+    }
+
+    .school-of-tomorrow {
+        order: 3;
+    }
+
+    .lpu {
+        order: 4;
+    }
+
     .education-section-container .education-container:nth-last-child(2) {
         padding-bottom: 20px;
         margin-bottom: 0px;
