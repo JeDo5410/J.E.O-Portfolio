@@ -466,8 +466,7 @@ section {
 }
 
 .technical-skills-container .row-cols-2 > .col:last-child {
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: left;
 }
 
 .specified-skill {
