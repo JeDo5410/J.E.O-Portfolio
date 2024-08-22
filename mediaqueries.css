@@ -71,9 +71,19 @@
     .btn-container {
       flex-wrap: wrap;
     }
-    .contact-info-container {
-      margin: 0;
+    .contact-info-upper-container {
+      width: 100%;
+      gap: 1rem;
+      justify-content: left;
     }
+    .contact-info-container {
+      margin: 0 0 0 0;
+    }
+    .contact-info-container p {
+      font-size: 0.5rem;
+      flex-wrap: wrap;
+    }
+
     .contact-info-container p,
     .nav-links li a {
       font-size: 1rem;

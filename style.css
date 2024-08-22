@@ -544,9 +544,17 @@ section {
     position: relative;
 }
 
-.education-section-container .education-container:nth-last-child(-n+2) {
-    padding-bottom: 0px;
-    margin-bottom: 20px;
+.mt-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.education-section-container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .education-container {
@@ -554,6 +562,7 @@ section {
     margin-top: -2px;
     border-left: 2px solid #f36100;
     position: relative;
+
 }
 
 .education-container1 {
@@ -699,6 +708,7 @@ section {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .card-header1 {
@@ -859,12 +869,14 @@ section {
 }
 
 /* Contact */
-
+.darker-gray-bg {
+    height: auto;
+}
 #contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 80vh;
 }
 
 .contact-info-upper-container {
@@ -872,7 +884,7 @@ section {
     justify-content: center;
     border-radius: 2rem;
     border: #f36100 0.1rem solid;
-    background: #252525;
+    background: #151515;
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -884,9 +896,13 @@ section {
     gap: 0.5rem;
     margin: 1rem;
 }
+.contact-info-container a:hover {
+    text-decoration: none;
+}
 
 .contact-info-container p {
     font-size: larger;
+    margin-bottom: 0;
 }
 
 .contact-icon {
@@ -896,6 +912,8 @@ section {
 .email-icon {
     height: 2.5rem;
 }
+
+
 
 /* Footer */
 
