@@ -690,6 +690,7 @@ section {
 }
 
 .project-container {
+    display: flex;
     background-color: rgb(37, 37, 37);
     width: 22.5rem;
 }
@@ -713,6 +714,15 @@ section {
 
 .card-text {
     padding: 0 0 10px 0;
+}
+
+.project-card-body  {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-body  {
+    justify-content: space-between;
 }
 
 .project-links {
@@ -800,6 +810,43 @@ section {
     margin: 0;
     color: #4b5563;
 }
+
+.technology-tags .badge {
+    font-size: 0.8rem;
+    padding: 0.3em 0.6em;
+}
+.badge.bg-primary {
+    background-color: #007bff !important;
+}
+.badge.bg-success {
+    background-color: #28a745 !important;
+}
+.badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #212529;
+}
+
+@media (max-width: 590px) {
+    .popover-content {
+        margin-top: -2.8rem;
+        margin-left: -9.5rem;
+    }
+    .popover-content::before {
+        display: none;
+    }
+    .popover-content::after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: -4px;
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        transform: rotate(45deg);
+
+    }
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -810,6 +857,7 @@ section {
         transform: translate(-50%, 0);
     }
 }
+
 /* Contact */
 
 #contact {
@@ -851,10 +899,13 @@ section {
 
 /* Footer */
 
+.black-bg {
+    background-color: #000000;
+}
+
 footer {
     height: 26vh;
     margin: 0 1rem;
-    background-color: #000000;
 }
 
 footer p {
