@@ -83,6 +83,9 @@
       font-size: 0.5rem;
       flex-wrap: wrap;
     }
+    .email-link a {
+      font-size: small;
+  }
 
     .contact-info-container p,
     .nav-links li a {
