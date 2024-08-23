@@ -33,12 +33,22 @@ function showAlert() {
 }
 
 // Copy phone number 
-function copyToClipboard(event) {
-    event.preventDefault();
-    const phoneNumber = document.getElementById('phoneNumber').textContent;
-    navigator.clipboard.writeText(phoneNumber).then(() => {
-        alert('Phone number copied to clipboard!');
-    }).catch(err => {
-        console.error('Failed to copy: ', err);
+document.addEventListener('DOMContentLoaded', function() {
+    const phoneNumber = document.getElementById('phoneNumber');
+    
+    phoneNumber.addEventListener('click', function(event) {
+        event.preventDefault();
+        copyToClipboard(this.textContent);
     });
-}
+
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text)
+            .then(() => {
+                console.log("Text copied to clipboard");
+                alert('Phone number copied to clipboard!');
+            })
+            .catch(err => {
+                console.error("Failed to copy: ", err);
+            });
+    }
+});
