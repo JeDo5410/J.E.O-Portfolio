@@ -45,10 +45,21 @@ document.addEventListener('DOMContentLoaded', function() {
         navigator.clipboard.writeText(text)
             .then(() => {
                 console.log("Text copied to clipboard");
-                alert('Phone number copied to clipboard!');
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Copied!',
+                    text: 'Phone number has been copied to clipboard.',
+                    timer: 2000,
+                    showConfirmButton: false
+                });
             })
             .catch(err => {
                 console.error("Failed to copy: ", err);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Failed to copy phone number.',
+                });
             });
     }
 });
