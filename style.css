@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+.logo1 {
+    width: 4rem;
+}
+
 body {
     font-family: "Poppins", "sans-serif";
     background-color: #151515;
