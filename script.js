@@ -31,3 +31,14 @@ function showAlert() {
         text: "This feature is currently under development! ",
     });
 }
+
+// Copy phone number 
+function copyToClipboard(event) {
+    event.preventDefault();
+    const phoneNumber = document.getElementById('phoneNumber').textContent;
+    navigator.clipboard.writeText(phoneNumber).then(() => {
+        alert('Phone number copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}

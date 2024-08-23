@@ -913,6 +913,15 @@ section {
     height: 2.5rem;
 }
 
+#phoneNumber {
+    color: white;
+}
+
+#phoneNumber:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #f36100;
+}
 
 
 /* Footer */
