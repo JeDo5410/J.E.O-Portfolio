@@ -85,3 +85,27 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// Slide In Tailwind
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove('opacity-0', 'translate-x-[-50px]');
+                entry.target.classList.add('opacity-100', 'translate-x-0');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('[data-animate]').forEach((el) => {
+        observer.observe(el);
+    });
+});
+
+// Disables Tailwind base styles    
+tailwind.config = {
+    corePlugins: {
+      preflight: false,
+    }
+  }
