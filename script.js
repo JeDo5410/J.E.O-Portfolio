@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     timer: 2000,
                     showConfirmButton: false
                 });
-            })
+            }) 
             .catch(err => {
                 console.error("Failed to copy: ", err);
                 Swal.fire({
