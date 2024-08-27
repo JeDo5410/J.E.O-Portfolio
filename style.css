@@ -6,7 +6,9 @@
     margin: 0;
     padding: 0;
 }
-
+html, body {
+    overflow-x: hidden;
+  }
 .logo1 {
     width: 11rem;
 }
